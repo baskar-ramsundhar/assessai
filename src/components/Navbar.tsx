@@ -80,9 +80,11 @@ const Navbar = () => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem>
-                <User className="mr-2 h-4 w-4" />
-                <span>Profile</span>
+              <DropdownMenuItem asChild>
+                <Link to="/profile">
+                  <User className="mr-2 h-4 w-4" />
+                  <span>Profile</span>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Settings className="mr-2 h-4 w-4" />
@@ -171,12 +173,11 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="border-t border-gray-200 mt-2 pt-2">
-            <a
-              href="#"
-              className="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 rounded"
+            <button
+              className="block py-2 pl-3 pr-4 text-gray-700 hover:bg-gray-100 rounded w-full text-left"
             >
               Log out
-            </a>
+            </button>
           </li>
         </ul>
       </div>

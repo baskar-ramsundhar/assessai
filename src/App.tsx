@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import EssayAnalyzer from "./components/EssayAnalyzer";
 import QuizCreator from "./components/QuizCreator";
 import AnalyticsView from "./components/AnalyticsView";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/essay-analyzer" element={<EssayAnalyzer />} />
           <Route path="/quiz-creator" element={<QuizCreator />} />
           <Route path="/analytics" element={<AnalyticsView />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
